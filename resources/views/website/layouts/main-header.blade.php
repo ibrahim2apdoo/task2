@@ -19,6 +19,21 @@
                 <ul>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Register</a></li>
+                    <!--begin::Languages-->
+                    <li>
+                    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                        <a class="{{LaravelLocalization::getCurrentLocaleNative() == $properties['native'] ? 'd-none' : '' }}"
+                           rel="alternate" hreflang="{{ $localeCode }}"
+                           href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                    <span class="symbol symbol-30 mr-3">
+                                    <img src="{{asset('dashboard/media/svg/flags/'.$localeCode .'.svg')}}" alt=""/>
+{{--                                        <span class="navi-text">{{ $properties['native'] }}</span>--}}
+                                </span>
+                        </a>
+
+                    @endforeach
+                    <!--end::Languages-->
+                    </li>
                 </ul>
             </div>
         </div>
