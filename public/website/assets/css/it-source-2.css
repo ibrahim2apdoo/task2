@@ -14,7 +14,7 @@ theme.
 
 CSS Table of content:-
 
-1. Global Area 
+1. Global Area
 2. Header Section
 =====================================================================*/
 /*=========
@@ -1230,6 +1230,7 @@ select:visited {
 }
 
 .it-nw-why-choose-feature-list {
+    height: 120px;
   padding: 15px;
   margin-bottom: 30px;
   background-color: #fff;
@@ -1238,10 +1239,11 @@ select:visited {
 }
 .it-nw-why-choose-feature-list .it-nw-why-choose-feature-icon {
   margin-right: 28px;
+  margin-left: 28px;
 }
 .it-nw-why-choose-feature-list .it-nw-why-choose-feature-icon i {
   font-size: 50px;
-  line-height: 0.7;
+
 }
 .it-nw-why-choose-feature-list .it-nw-why-choose-feature-text h3 {
   font-size: 18px;

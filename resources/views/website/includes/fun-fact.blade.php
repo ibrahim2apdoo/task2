@@ -1,6 +1,6 @@
-<!-- Start of Fun fact section
+<!-- Start of Fun_fact section
 	============================================= -->
-<section id="it-nw-fun-fact" class="it-nw-fun-fact-section position-relative">
+<section style="margin-bottom: 100px" id="it-nw-fun-fact" class="it-nw-fun-fact-section position-relative">
     <div class="container">
         <div class="it-nw-fun-fact-content position-relative">
             <div class="row">
@@ -11,7 +11,7 @@
                         </div>
                         <div class="it-nw-fun-fact-text headline pera-content">
                             <h3><span class="counter">8776</span>+</h3>
-                            <p>Happy Clients</p>
+                            <p>{{trans('Fun_fact.Happy Clients')}}</p>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                         </div>
                         <div class="it-nw-fun-fact-text headline pera-content">
                             <h3><span class="counter">9000</span>+</h3>
-                            <p>Running Project</p>
+                            <p>{{trans('Fun_fact.Running Project')}}</p>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="it-nw-fun-fact-text headline pera-content">
                             <h3><span class="counter">110</span>+</h3>
-                            <p>Employees</p>
+                            <p>{{trans('Fun_fact.Employees')}}</p>
                         </div>
                     </div>
                 </div>
@@ -44,12 +44,12 @@
                         </div>
                         <div class="it-nw-fun-fact-text headline pera-content">
                             <h3><span class="counter">800</span>+</h3>
-                            <p>Annual Turnover</p>
+                            <p>{{trans('Fun_fact.Annual Turnover')}}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section >
 <!-- End of Fun fact section

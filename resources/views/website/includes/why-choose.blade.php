@@ -8,42 +8,56 @@
                 <div class="col-lg-6">
                     <div class="it-nw-why-choose-text">
                         <div class="it-nw-section-title headline pera-content  wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-                            <span class="it-nw-title-tag">Why choose Us </span>
-                            <h2>Here are some reasons why
-                                choosing us.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing  eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.consectetur adipisicing
-                                elit, sed do eiusmod tempor incididunt ut labore </p>
+                            <span class="it-nw-title-tag">{{trans('Process.Our Process')}} </span>
+                            <p>{{trans('Process.Want to know more')}}  </p>
                         </div>
                         <div class="it-nw-why-choose-feature">
-                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
                                 <div class="it-nw-why-choose-feature-icon">
-                                    <i class="flaticon-agile"></i>
+                                    <i class=" fas fa-search"></i>
                                 </div>
                                 <div class="it-nw-why-choose-feature-text headline pera-content">
-                                    <h3>Flexible Solutions</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                                    <h3>{{trans('Process.Your Need')}}</h3>
+                                    <p>{{trans('Process.Search the Service You need')}}</p>
                                 </div>
                             </div>
-                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
                                 <div class="it-nw-why-choose-feature-icon">
-                                    <i class="flaticon-design-thinking"></i>
+                                    <i class="fa fa-question"></i>
                                 </div>
                                 <div class="it-nw-why-choose-feature-text headline pera-content">
-                                    <h3>Creative Design</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  </p>
+                                    <h3>{{trans('Process.question')}}</h3>
+                                    <p>{{trans('Process.For enquiring make a call or mail us')}}</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="it-nw-btn text-center wow flipInX" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <a class="d-flex justify-content-center align-items-center" href="#">Get Started <i class="fas fa-arrow-right"></i></a>
+                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                                <div class="it-nw-why-choose-feature-icon">
+                                    <i class=" far fa-money-bill-alt"></i>
+                                </div>
+                                <div class="it-nw-why-choose-feature-text headline pera-content">
+                                    <h3>{{trans('Process.Confirm')}}</h3>
+                                    <p>{{trans('Process.Get your Quote and confirm us')}}</p>
+                                </div>
+                            </div>
+                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                                <div class="it-nw-why-choose-feature-icon">
+                                    <i class="fa fa-smile"></i>
+                                </div>
+                                <div class="it-nw-why-choose-feature-text headline pera-content">
+                                    <h3>{{trans('Process.Stay Calm')}}</h3>
+
+
+
+                                    <h4>{{trans('Process.Feel free and Relax Yourself')}}</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
                     <div class="it-nw-why-choose-video position-relative">
                         <div class="it-nx-wc-video-img">
-                            <img src="{{asset('website/assets/img/its-2/about/wcv1.jpg')}}" alt="">
+                            <img src="{{asset('website/assets/img/its-2/about/web.webp')}}" alt="">
                         </div>
                         <div class="it-nw-why-choose-video-play position-absolute">
                             <a class="video_box" href="https://www.youtube.com/watch?v=6zsr22OeF2I">

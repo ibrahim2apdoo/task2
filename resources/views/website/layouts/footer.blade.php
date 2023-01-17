@@ -5,25 +5,7 @@
 
 <!-- Start of Footer section
 	============================================= -->
-<footer style="margin-top: 100px" id="it-nw-fooer" class="it-nw-footer-section  position-relative" data-background="{{asset('website/assets/img/its-2/bg/f-bg.jpg')}}">
-    <div class="it-nw-newslatter-area">
-        <div class="container">
-            <div class="it-nw-newslatter-content headline d-flex align-items-center justify-content-between">
-                <div class="it-nw-newslatter-text">
-                    <h3>Sign up to get Latest Updates</h3>
-                    <span>It is an established fact that a reader will be distracted.</span>
-                </div>
-                <div class="it-nw-newslatter-form position-relative">
-                    <form action="#">
-                        <input type="text" placeholder="Email Here">
-                        <div class="it-nw-btn text-center">
-                            <button>Subscribe Now<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+<footer style="margin-top: 100px" id="it-nw-fooer" class="it-nw-footer-section  position-relative" data-background="{{asset('website/assets/img/its-2/logo/image.jpg')}}">
     <div class="it-nw-fooer-widget-wrapper">
         <div class="container">
             <div class="it-nw-fooer-widget-area">
@@ -31,10 +13,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="it-nw-fooer-widget headline pera-content ul-li-block">
                             <div class="it-nw-logo-widget">
-                                <a href="#"><img src="{{asset('website/assets/img/its-2/logo/logo2.png')}}" alt=""></a>
-                                <p>Lorem ipsum dolor  amet, consectetur
-                                    adipiscing elit. Donec ut scelerisque arcu,
-                                    at porttitor lacus. Integer.</p>
+                                <a href="#"><img src="{{asset('website/assets/img/its-2/logo/logo.png')}}" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -104,6 +83,7 @@
 
 
 <!-- For Js Library -->
+
 <script src="{{asset('/website/assets/js/jquery.js')}}"></script>
 <script src="{{asset('/website/assets/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('/website/assets/js/popper.min.js')}}"></script>
