@@ -37,20 +37,8 @@ class HomeController extends Controller
     {
         return view('website.About.about');
     }
-    public function team()
-    {
-        return view('website.Team.team');
-    }
-    public function service()
-    {
-        $services=Service::all();
-        return view('website.service.service',compact('services'));
-    }
-    public function show($id)
-    {
-        $service=Service::findOrFail($id);
-        return view('website.service.show',compact('service'));
-    }
+
+
 
     public function contact()
     {

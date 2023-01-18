@@ -25,7 +25,7 @@
                                     </div>
                                     <div class="service_text_box saas2-headline pera-content">
                                         <h5 class="card-title">{{$service->title}}</h5>
-                                        <p class="card-title"><a href="{{route('service.show',$service->id)}}" class="serviceTitle">التفاصيل ...</a></p>
+                                        <p class="card-title"><a href="{{route('service.show',$service->id)}}" class="serviceTitle">{{trans('main.Read more')}}</a></p>
                                     </div>
                                 </div>
                             </div>

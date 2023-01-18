@@ -4,8 +4,8 @@
             <div class="it-nw-header-cta-social d-flex">
                 <div class="it-nw-header-cta ul-li">
                     <ul>
-                        <li><img src="{{asset('website/assets/img/its-2/icon/ic1.png')}}" alt=""> office@example.com</li>
-                        <li><img src="{{asset('website/assets/img/its-2/icon/ic2.png')}}" alt=""> + (291) 1800-567-9090</li>
+                        <li><img src="{{asset('website/assets/img/its-2/icon/ic1.png')}}" alt=""> {{email()}}</li>
+                        <li><img src="{{asset('website/assets/img/its-2/icon/ic2.png')}}" alt=""> {{phone()}}</li>
                         <li>
                             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                 <a class="{{LaravelLocalization::getCurrentLocaleNative() == $properties['native'] ? 'd-none' : '' }}"
@@ -40,10 +40,10 @@
                     <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
                         <li class="side-demo position-relative"><a href="{{route('home')}}">{{trans('main.Home')}}</a></li>
                         <li><a href="{{route('about')}}">{{trans('main.About')}}</a></li>
-                        <li><a href="{{route('team')}}">{{trans('main.Team')}}</a></li>
                         <li><a href="{{route('service')}}">{{trans('main.Service')}}</a></li>
                         <li><a href="{{route('partners')}}">{{trans('main.Partners')}}</a></li>
-                        <li><a href="">{{trans('main.Projects')}}</a></li>
+                        <li><a href="{{route('clients')}}">{{trans('main.clients')}}</a></li>
+                        <li><a href="{{route('projects')}}">{{trans('main.Projects')}}</a></li>
                         <li><a href="{{route('contact')}}">{{trans('main.Contact Us')}}</a></li>
 
 {{--                        <li class="dropdown">--}}
@@ -77,7 +77,6 @@
                         <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
                             <li ><a href="#">Demos</a></li>
                             <li><a href="{{route('about')}}"  >About</a></li>
-                            <li><a href="{{route('team')}}"  >Team</a></li>
                             <li><a href="{{route('service')}}"  >Service</a></li>
                             <li><a href="{{route('contact')}}"  >Contact</a></li>
                             <li class="dropdown">

@@ -52,6 +52,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
             //partners routes
             Route::resource('partners', 'PartnerController');
 
+            //clients routes
+            Route::resource('clients', 'ClientController');
+
             //portfolios routes
             Route::resource('portfolios', 'PortfolioController');
 

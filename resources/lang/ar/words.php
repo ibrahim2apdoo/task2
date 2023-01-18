@@ -156,6 +156,12 @@ return [
     'edit_partner' => 'تعديل الشريك',
     'create_partner' => 'إنشاء شريك',
 
+    'clients' => 'عملائنا',
+    'show_clients' => 'عرض العملاء',
+    'show_client' => 'عرض العميل',
+    'edit_client' => 'تعديل العميل',
+    'create_client' => 'إنشاء عميل',
+
     'portfolios' => 'سابقة الأعمال',
     'show_portfolios' => 'عرض سابقة الأعمال',
     'show_portfolio' => 'عرض سابقة العمل',

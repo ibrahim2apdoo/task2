@@ -41,3 +41,26 @@ function settings(){
         return $setting;
     return '';
 }
+
+function phone(){
+    $phone=\App\Models\Contact::where('type','phone')->first();
+
+    if ($phone)
+        return $phone->contact;
+    return '';
+}
+
+function email(){
+    $email=\App\Models\Contact::where('type','email')->first();
+
+    if ($email)
+        return $email->contact;
+    return '';
+}
+
+function Projects(){
+    $Projects=\App\Models\Project::take(6)->get();
+    if ($Projects)
+        return $Projects;
+    return '';
+}

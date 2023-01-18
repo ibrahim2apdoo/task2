@@ -7,7 +7,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="it-nw-fun-fact-innerbox d-flex align-items-center">
                         <div class="it-nw-fun-fact-icon d-flex justify-content-center align-items-center">
-                            <i class="flaticon-rating"></i>
+                            <i class="fas fa-child"></i>
                         </div>
                         <div class="it-nw-fun-fact-text headline pera-content">
                             <h3><span class="counter">8776</span>+</h3>
@@ -18,7 +18,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="it-nw-fun-fact-innerbox d-flex align-items-center">
                         <div class="it-nw-fun-fact-icon d-flex justify-content-center align-items-center">
-                            <i class="flaticon-project-plan"></i>
+                            <i class="far fa-address-card"></i>
                         </div>
                         <div class="it-nw-fun-fact-text headline pera-content">
                             <h3><span class="counter">9000</span>+</h3>
@@ -29,7 +29,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="it-nw-fun-fact-innerbox d-flex align-items-center">
                         <div class="it-nw-fun-fact-icon d-flex justify-content-center align-items-center">
-                            <i class="flaticon-employee"></i>
+                            <i class="far fa-clock"></i>
                         </div>
                         <div class="it-nw-fun-fact-text headline pera-content">
                             <h3><span class="counter">110</span>+</h3>
@@ -40,7 +40,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="it-nw-fun-fact-innerbox d-flex align-items-center">
                         <div class="it-nw-fun-fact-icon d-flex justify-content-center align-items-center">
-                            <i class="flaticon-agile"></i>
+                            <i class="fa fa-upload"></i>
                         </div>
                         <div class="it-nw-fun-fact-text headline pera-content">
                             <h3><span class="counter">800</span>+</h3>

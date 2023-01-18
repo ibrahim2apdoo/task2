@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="it-nx-about-cta-text headline">
                                     <span>{{trans('main.Contact Us')}}</span>
-                                    <h4>+091 547 458 458</h4>
+                                    <h4>{{phone()}}</h4>
                                 </div>
                             </div>
                         </div>

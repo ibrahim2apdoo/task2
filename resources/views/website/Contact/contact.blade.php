@@ -20,7 +20,7 @@
                         <div class="card-body h-100 d-flex justify-content-center flex-column">
                             @foreach($contacts as $contact)
                             <div class="card-text">
-                                <i class="{{$contact->icon}} m-3 contact-phone-icon"></i><p>{{$contact->contact}}</p>
+                                <i class="{{$contact->icon}} m-3 contact-phone-icon" style="display: flex;"><p style="margin: 0px 20px 0px 20px">{{$contact->contact}}</p></i>
                             </div>
                             @endforeach
                         </div>

@@ -5,7 +5,7 @@
 
 <!-- Start of Footer section
 	============================================= -->
-<footer style="margin-top: 100px" id="it-nw-fooer" class="it-nw-footer-section  position-relative" data-background="{{asset('website/assets/img/its-2/logo/image.jpg')}}">
+<footer id="it-nw-fooer" class="it-nw-footer-section  position-relative" data-background="{{asset('website/assets/img/its-2/logo/image.jpg')}}">
     <div class="it-nw-fooer-widget-wrapper">
         <div class="container">
             <div class="it-nw-fooer-widget-area">
@@ -20,13 +20,14 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="it-nw-fooer-widget headline pera-content ul-li-block">
                             <div class="it-nw-fooer-menu">
-                                <h3 class="widget-title">Quick link</h3>
+                                <h3 class="widget-title">{{trans('main.links')}}</h3>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">News</a></li>
+                                    <li><a href="{{route('about')}}">{{trans('main.About')}}</a></li>
+                                    <li><a href="{{route('service')}}">{{trans('main.Service')}}</a></li>
+                                    <li><a href="{{route('partners')}}">{{trans('main.Partners')}}</a></li>
+                                    <li><a href="{{route('clients')}}">{{trans('main.clients')}}</a></li>
+                                    <li><a href="{{route('projects')}}">{{trans('main.Projects')}}</a></li>
+                                    <li><a href="{{route('contact')}}">{{trans('main.Contact Us')}}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -34,13 +35,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="it-nw-fooer-widget headline pera-content ul-li-block">
                             <div class="it-nw-fooer-menu">
-                                <h3 class="widget-title">Products</h3>
+                                <h3 class="widget-title">{{trans('main.Projects')}}</h3>
                                 <ul>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Help desk</a></li>
-                                    <li><a href="#">Support</a></li>
+                                    @foreach(Projects() as $title)
+                                    <li><a href="{{route('project.show',$title->id)}}">{{$title->title}}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -48,11 +47,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="it-nw-fooer-widget headline pera-content ul-li-block">
                             <div class="it-nw-contact-widget">
-                                <h3 class="widget-title">Contact info</h3>
+                                <h3 class="widget-title">{{trans('main.Contact info')}}</h3>
                                 <ul>
-                                    <li><i class="fas fa-phone"></i> <span> +123 (4567) 890 </span>  </li>
-                                    <li><i class="fas fa-envelope"></i> <span> info@envato.com  </span> </li>
-                                    <li><i class="fas fa-map-marker-alt"></i> <span>380 St Kilda Road, Melbourne
+                                    <li><i class="fas fa-phone"></i> <span style="margin-right: 26px;margin-left: 26px;"> {{phone()}} </span>  </li>
+                                    <li><i class="fas fa-envelope"></i> <span style="margin-right: 26px;margin-left: 26px;"> {{email()}}  </span> </li>
+                                    <li><i class="fas fa-map-marker-alt"></i> <span style="margin-right: 26px;margin-left: 26px;">380 St Kilda Road, Melbourne
 										VIC 3004, Australia </span></li>
                                 </ul>
                             </div>

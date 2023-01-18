@@ -515,6 +515,60 @@
                 @endpermission
                 {{-- partner routes end --}}
 
+
+
+
+
+
+                {{-- client routes start --}}
+                @permission('read-clients')
+                <li class="menu-item menu-item-submenu {{ request()->routeIs('clients.*') ? 'menu-item-open menu-item-here' : '' }}"
+                    aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle">
+                        <i class="fas fa-handshake svg-icon menu-icon"></i>
+                        <span class="menu-text">{{__('words.clients')}}</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="menu-submenu">
+                        <i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+
+                            @permission('read-clients')
+                            <li class="menu-item  {{ request()->routeIs('clients.index') ? 'menu-item-active' : '' }}"
+                                aria-haspopup="true">
+                                <a href="{{route('clients.index')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{__('words.show_all')}}</span>
+                                </a>
+                            </li>
+                            @endpermission
+
+                            @permission('create-partners')
+                            <li class="menu-item  {{ request()->routeIs('clients.create') ? 'menu-item-active' : '' }}"
+                                aria-haspopup="true">
+                                <a href="{{route('clients.create')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{__('words.create')}}</span>
+                                </a>
+                            </li>
+                            @endpermission
+                        </ul>
+                    </div>
+                </li>
+                @endpermission
+                {{-- client routes end --}}
+
+
+
+
+
+
+
+
                 {{-- portfolio routes start --}}
                 @permission('read-portfolios')
                 <li class="menu-item menu-item-submenu {{ request()->routeIs('portfolios.*') ? 'menu-item-open menu-item-here' : '' }}"

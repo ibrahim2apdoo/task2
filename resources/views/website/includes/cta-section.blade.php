@@ -15,7 +15,7 @@
                     </div>
                     <div class="it-nw-cta-text headline">
                         <span>{{trans('main.Contact Us')}}</span>
-                        <h3>+091 547 458 458</h3>
+                        <h3>{{phone()}}</h3>
                     </div>
                 </div>
                 <div class="it-nw-btn text-center">

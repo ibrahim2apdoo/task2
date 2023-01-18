@@ -12,7 +12,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                     <div class="it-nw-feature-innerbox text-center position-relative custom-feature">
                         <div class="it-nw-feature-inner-icon position-absolute d-flex justify-content-center align-items-center">
-                            <i class=" fas fa-user-friends"></i>
+                            <i class=" fas fa-users"></i>
                         </div>
                         <div class="it-nw-feature-inner-text headline pera-content">
                             <h3>{{trans('Services.Experts and Staff')}}</h3>

@@ -3,9 +3,13 @@ return [
     'Home'=>'Home',
     'About'=>'About',
     'Contact Us'=>'Contact Us',
-    'Team'=>'Team ',
     'Service'=>'Service',
+    'All Services'=>'All Services',
+    'All Blogs'=>'All Blogs',
     'Partners'=>'Partners',
+    'clients'=>'Clients',
+    'links'=>'links',
+    'Contact info'=>'Contact info',
     'Get A Quote'=>'Get A Quote ',
     'Clients'=>'Clients',
     'Projects'=>'Projects',
@@ -15,5 +19,5 @@ return [
     'Read more'=>'Read more',
     'More Blogs'=>'More Blogs',
     'Manarat Al-Shabakat Almutatawirah'=>'Manarat Al-Shabakat Almutatawirah Company Limited Information Technology Co. gives the high priority to find the best suppliers for the products of information technology systems, telecom, and security systems and services providers, with selecting the best offers, which aligns with clients’ needs and help to achieve their desires.',
-
+    'Manarat Al-Shabakat Almutatawirah Company'=>'We work closely with different clients from various sectors.We are proud to have served some of the Kingdom s leading entities',
 ];

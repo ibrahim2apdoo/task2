@@ -6,6 +6,22 @@
         <div class="container">
             <div class="blog-feed-content">
                 <div class="row">
+                    <div class="col-md-4">
+                        <div class="saasio-blog-sidebar">
+                            <div class="side-bar-widget">
+                                <div class="category-widget dia-headline ul-li-block">
+                                    <h3 class="widget-title-2">{{trans('main.All Services')}}</h3>
+                                    <ul>
+                                        @foreach($services as $AllServices)
+                                            <li class="">
+                                                <a class="singleServiceCat" href="{{route('service.show',$AllServices->id)}}">{{$AllServices->title}}</a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-8">
 
                         <div class="saasio-blog-details-content">
@@ -25,11 +41,17 @@
                                 <article>
                                     <ul>
                                         <li style="text-align:justify"> {{$service->short_description}}</li>
+                                        <li style="text-align:justify"> {{$service->description}}</li>
                                     </ul>
                                 </article>
                             </div>
                         </div>
                     </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
