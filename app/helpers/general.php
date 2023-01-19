@@ -64,3 +64,36 @@ function Projects(){
         return $Projects;
     return '';
 }
+
+
+function Vision(){
+    $vision=\App\Models\Page::where('identifier','Vision')->get();
+    if ($vision)
+        return $vision;
+    return '';
+}
+
+function Mission(){
+    $mission=\App\Models\Page::where('identifier','Mission')->get();
+    if ($mission)
+        return $mission;
+    return '';
+}
+function Quality(){
+    $quality=\App\Models\Page::where('identifier','Quality')->get();
+    if ($quality)
+        return $quality;
+    return '';
+}
+function Partners(){
+    $partners=\App\Models\Page::where('identifier','Partners')->get();
+    if ($partners)
+        return $partners;
+    return '';
+}
+function Company(){
+    $company=\App\Models\Page::where('identifier','About our Company')->get();
+    if ($company)
+        return $company;
+    return '';
+}

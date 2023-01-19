@@ -2,7 +2,7 @@
 @section('content')
     <!-- Start of Contact inner page section
         ============================================= -->
-    <div style="margin-bottom: 200px" class="container row m-auto">
+    <div class="container row m-auto mt-60">
         <h2 style="margin: auto; font-weight: 600; margin-bottom:60px; font-size: 40px">{{trans('main.Contact us')}}</h2>
         <div style="margin-bottom: 100px" class="col-md-12">
             <div class="card contact-us-card mb-3 border-0">

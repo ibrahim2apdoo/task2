@@ -40,7 +40,7 @@ class SliderController extends Controller
 
     public function store(SliderRequest $request)
     {
-       return dd($request);
+
         try {
             $requested_data = $request->except(['_token', 'profile_avatar_remove', 'image']);
             $slider = $this->slider->create($requested_data);
