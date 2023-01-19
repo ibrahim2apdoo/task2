@@ -152,6 +152,12 @@ return [
     'edit_service' => 'Edit Service',
     'create_service' => 'Create Service',
 
+    'clients' => 'Clients',
+    'show_clients' => 'Show Clients',
+    'show_client' => 'Show Client',
+    'edit_client' => 'Edit Client',
+    'create_client' => 'Create Client',
+
     'partners' => 'Partners',
     'show_partners' => 'Show Partners',
     'show_partner' => 'Show Partner',

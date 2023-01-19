@@ -61,7 +61,7 @@
                         </div>
                         <div class="it-nw-about-bottom d-flex position-relative">
                             <div class="it-nw-btn  text-center">
-                                <a class="d-flex justify-content-center align-items-center" href="#">{{trans('main.Learn More')}} <i class="fas fa-arrow-right"></i></a>
+                                <a class="d-flex justify-content-center align-items-center" href="{{route('about')}}">{{trans('main.Learn More')}} <i class="fas fa-arrow-right"></i></a>
                             </div>
                             <span class="it-nw-about-arrow position-absolute"><img src="{{asset('website/assets/img/its-2/logo/arrow.png')}}" alt=""></span>
                             <div class="it-nw-about-cta d-flex">

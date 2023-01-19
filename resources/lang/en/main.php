@@ -2,7 +2,9 @@
 return [
     'Home'=>'Home',
     'About'=>'About',
-    'Contact Us'=>'Contact Us',
+    'Blog Page'=>'Blog Page',
+    'Blog'=>'Blog',
+    'Contact us'=>'Contact Us',
     'Service'=>'Service',
     'All Services'=>'All Services',
     'All Blogs'=>'All Blogs',
@@ -18,6 +20,9 @@ return [
     'We provide leading security systems'=>'We provide leading security systems',
     'Read more'=>'Read more',
     'More Blogs'=>'More Blogs',
+    'Latest Project'=>'Latest Project',
+    'Our Wonderful Gallery'=>'Our Wonderful Gallery',
+    'Our mission is to continuously'=>'Our mission is to continuously improve and diversify our offerings to provide the best and modern solutions by our specialists’ team in the field of information technology. Therefore, we have always kept to aligning our business strategies with current and future customers’ priorities.',
     'Manarat Al-Shabakat Almutatawirah'=>'Manarat Al-Shabakat Almutatawirah Company Limited Information Technology Co. gives the high priority to find the best suppliers for the products of information technology systems, telecom, and security systems and services providers, with selecting the best offers, which aligns with clients’ needs and help to achieve their desires.',
     'Manarat Al-Shabakat Almutatawirah Company'=>'We work closely with different clients from various sectors.We are proud to have served some of the Kingdom s leading entities',
 ];

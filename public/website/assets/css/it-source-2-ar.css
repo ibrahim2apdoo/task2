@@ -27,20 +27,22 @@ Color Code
     -webkit-font-smoothing: antialiased;
 }
 
+
 ::-moz-selection {
     color: #ffffff;
-    background-color: #1686c6;
+    background-color: #4c6df3;
 }
 
 ::selection {
     color: #ffffff;
-    background-color: #1686c6;
+    background-color: #4c6df3;
 }
 
 ::-moz-selection {
     color: #ffffff;
-    background-color: #1686c6;
+    background-color: #4c6df3;
 }
+
 
 .container {
     max-width: 1200px;

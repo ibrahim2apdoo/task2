@@ -44,15 +44,14 @@
                         <li><a href="{{route('partners')}}">{{trans('main.Partners')}}</a></li>
                         <li><a href="{{route('clients')}}">{{trans('main.clients')}}</a></li>
                         <li><a href="{{route('projects')}}">{{trans('main.Projects')}}</a></li>
-                        <li><a href="{{route('contact')}}">{{trans('main.Contact Us')}}</a></li>
+                        <li><a href="{{route('contact')}}">{{trans('main.Contact us')}}</a></li>
 
-{{--                        <li class="dropdown">--}}
-{{--                            <a href="#">Blog</a>--}}
-{{--                            <ul class="dropdown-menu clearfix">--}}
-{{--                                <li><a href="{{route('blog')}}">Blog Page</a></li>--}}
-{{--                                <li><a href="blog-single.html">Blog Details</a></li>--}}
-{{--                            </ul>--}}
-{{--                        </li>--}}
+                        <li class="dropdown">
+                            <a href="#">{{trans('main.Blog')}}+</a>
+                            <ul class="dropdown-menu clearfix">
+                                <li><a href="{{route('user.blog.index')}}">{{trans('main.Blog Page')}}</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="it-nw-btn  text-center">

@@ -14,7 +14,7 @@
                         <i class="fas fa-phone"></i>
                     </div>
                     <div class="it-nw-cta-text headline">
-                        <span>{{trans('main.Contact Us')}}</span>
+                        <span>{{trans('main.Contact us')}}</span>
                         <h3>{{phone()}}</h3>
                     </div>
                 </div>

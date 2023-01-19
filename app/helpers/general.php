@@ -42,6 +42,17 @@ function settings(){
     return '';
 }
 
+
+
+
+
+
+
+
+
+
+
+
 function phone(){
     $phone=\App\Models\Contact::where('type','phone')->first();
 
@@ -95,5 +106,17 @@ function Company(){
     $company=\App\Models\Page::where('identifier','About our Company')->get();
     if ($company)
         return $company;
+    return '';
+}
+function banner(){
+    $banner=\App\Models\Slider::take(1)->get();
+    if ($banner)
+        return $banner;
+    return '';
+}
+function Project(){
+    $project=\App\Models\Project::get();
+    if ($project)
+        return $project;
     return '';
 }

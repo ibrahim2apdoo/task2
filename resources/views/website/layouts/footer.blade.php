@@ -27,7 +27,7 @@
                                     <li><a href="{{route('partners')}}">{{trans('main.Partners')}}</a></li>
                                     <li><a href="{{route('clients')}}">{{trans('main.clients')}}</a></li>
                                     <li><a href="{{route('projects')}}">{{trans('main.Projects')}}</a></li>
-                                    <li><a href="{{route('contact')}}">{{trans('main.Contact Us')}}</a></li>
+                                    <li><a href="{{route('contact')}}">{{trans('main.Contact us')}}</a></li>
                                 </ul>
                             </div>
                         </div>
