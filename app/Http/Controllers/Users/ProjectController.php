@@ -18,7 +18,6 @@ class ProjectController extends Controller
 
     public function show($id)
     {
-
         $project=Project::findOrFail($id);
         $images = $project->files()->where('type', '!=', 'cover')->get();
         return view('website.Projects.show',compact('project','images'));

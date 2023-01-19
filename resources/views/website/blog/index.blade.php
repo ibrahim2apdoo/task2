@@ -31,7 +31,7 @@
                                                         {{createdAtFormat($blog->created_at)}}</span>
                                             </div>
                                             <p style="padding: 0px; margin: 5px;"> {{Str::limit($blog->description, 50)}}</p>
-                                            <a style="color: #000 !important; margin-top:10" class="blog-read-more" href="{{route('user.blog.show',$blog->id)}}">{{trans('main.Read more')}} </a>
+                                            <a style="color: #000 !important;" class="blog-read-more" href="{{route('user.blog.show',$blog->id)}}">{{trans('main.Read more')}} </a>
                                         </div>
                                     </div>
                                 </div>
