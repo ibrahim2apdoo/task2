@@ -5,11 +5,13 @@
         ============================================= -->
     <section style="margin-top: 100px" class="container pt-5">
         <div class="about_content_s2 mt-4">
+            @foreach(partners() as $partner)
             <div class="wow fadeFromLeft it-nw-section-title headline pera-content text-center middle-align wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeFromLeft;">
-                <span class="it-nw-title-tag"> {{trans('main.Partners')}}</span>
-                <p>{{trans('main.Manarat Al-Shabakat Almutatawirah')}}</p>
+                <span class="it-nw-title-tag"> {{$partner->title}}</span>
+                <p>{!! $partner->description !!}</p>
 
             </div>
+            @endforeach
         </div>
     </section>
     <!-- End of About  section

@@ -85,7 +85,7 @@ function Projects(){
     return '';
 }
 function about(){
-    $about=\App\Models\Page::get();
+    $about=\App\Models\Page::take(6)->get();
     if ($about)
         return $about;
     return '';
@@ -117,6 +117,21 @@ function Latest_Project(){
         return $Latest_Project;
     return '';
 }
+
+
+function Partners(){
+    $partner=\App\Models\Page::where('identifier','Partners')->get();
+    if ($partner)
+        return $partner;
+    return '';
+}
+function Clients(){
+    $client=\App\Models\Page::where('identifier','Clients')->get();
+    if ($client)
+        return $client;
+    return '';
+}
+
 
 function Solution_We_Offer(){
     $Solution_We_Offer=\App\Models\Page::where('identifier','Solution We Offer')->get();
