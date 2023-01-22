@@ -12,8 +12,8 @@
         <div class="container">
             <div class="it-nw-banner-item position-relative">
                 <div class="it-nw-banner-text headline pera-content">
-                    <h1>{{$banner->title}}
-                        <b id="typer">{{$banner->description}}</b></h1>
+                    <h1>{!! $banner->title !!}
+                        <b id="typer">{!! $banner->description !!}</b></h1>
                 </div>
 
             </div>

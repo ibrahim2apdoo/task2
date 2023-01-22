@@ -24,19 +24,19 @@
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="it-nw-about-text-wrapper">
                     <div class="it-nw-section-title headline pera-content">
-                        <span class="it-nw-title-tag">{{$Company->title}}</span>
-                        <h2>{{$Company->sub_title}}</h2>
-                        <p style="text-align:justify">{{$Company->description}}</p>
+                        <span class="it-nw-title-tag">{!! $Company->title !!}</span>
+                        <h2>{!! $Company->sub_title !!}</h2>
+                        <p style="text-align:justify">{!! $Company->description !!}</p>
                     </div>
                     @endforeach
                     <div class="it-nw-about-tab-wrapper">
                         <div class="it-nw-about-tab-btn">
                             <ul id="tabs" class="nav text-capitalize nav-tabs">
                                 @foreach(Mission() as $mission)
-                                <li class="nav-item"><a href="#" data-target="#mission" data-toggle="tab" class="nav-link text-capitalize">{{$mission->title}} </a></li>
+                                <li class="nav-item"><a href="#" data-target="#mission" data-toggle="tab" class="nav-link text-capitalize">{!! $mission->title !!} </a></li>
                                 @endforeach
                                     @foreach(Vision() as $vision)
-                                <li class="nav-item"><a href="#" data-target="#vision" data-toggle="tab" class="nav-link text-capitalize">{{$vision->title}} </a></li>
+                                <li class="nav-item"><a href="#" data-target="#vision" data-toggle="tab" class="nav-link text-capitalize">{!! $vision->title !!} </a></li>
                                     @endforeach
                             </ul>
                         </div>
@@ -46,14 +46,14 @@
                                 <div id="mission" class="tab-pane fade">
                                     <div class="it-nw-about-tab-content">
                                         @foreach(Mission() as $mission)
-                                        <p>{{$mission->description}}  </p>
+                                        <p>{!! $mission->description !!}  </p>
                                         @endforeach
                                     </div>
                                 </div>
                                 <div id="vision" class="tab-pane fade">
                                     <div class="it-nw-about-tab-content">
                                         @foreach(Vision() as $vision)
-                                        <p>{{$vision->description}}</p>
+                                        <p>{!! $vision->description !!}</p>
                                         @endforeach
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="it-nx-about-cta-text headline">
-                                    <span>{{trans('main.Contact Us')}}</span>
+                                    <span>{{trans('main.Contact us')}}</span>
                                     <h4>{{phone()}}</h4>
                                 </div>
                             </div>

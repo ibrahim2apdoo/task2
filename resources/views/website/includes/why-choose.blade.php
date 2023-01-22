@@ -7,50 +7,24 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="it-nw-why-choose-text">
+                        @foreach(OurProcess() as $process)
                         <div class="it-nw-section-title headline pera-content  wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-                            <span class="it-nw-title-tag">{{trans('Process.Our Process')}} </span>
-                            <p>{{trans('Process.Want to know more')}}  </p>
+                            <span class="it-nw-title-tag">{!! $process->title !!} </span>
+                            <p>{!! $process->sub_title !!}  </p>
                         </div>
+                        @endforeach
                         <div class="it-nw-why-choose-feature">
+                            @foreach($processesItem as $processItem)
                             <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
                                 <div class="it-nw-why-choose-feature-icon">
-                                    <i class=" fas fa-search"></i>
+                                    <i class="{!! $processItem->icon !!}"></i>
                                 </div>
                                 <div class="it-nw-why-choose-feature-text headline pera-content">
-                                    <h3>{{trans('Process.Your Need')}}</h3>
-                                    <p>{{trans('Process.Search the Service You need')}}</p>
+                                    <h3>{{$processItem->title}}</h3>
+                                    <p>{!! $processItem->short_description !!}</p>
                                 </div>
                             </div>
-                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-                                <div class="it-nw-why-choose-feature-icon">
-                                    <i class="fa fa-question"></i>
-                                </div>
-                                <div class="it-nw-why-choose-feature-text headline pera-content">
-                                    <h3>{{trans('Process.question')}}</h3>
-                                    <p>{{trans('Process.For enquiring make a call or mail us')}}</p>
-                                </div>
-                            </div>
-                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-                                <div class="it-nw-why-choose-feature-icon">
-                                    <i class=" far fa-money-bill-alt"></i>
-                                </div>
-                                <div class="it-nw-why-choose-feature-text headline pera-content">
-                                    <h3>{{trans('Process.Confirm')}}</h3>
-                                    <p>{{trans('Process.Get your Quote and confirm us')}}</p>
-                                </div>
-                            </div>
-                            <div class="it-nw-why-choose-feature-list d-flex align-items-center  wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-                                <div class="it-nw-why-choose-feature-icon">
-                                    <i class="fa fa-smile"></i>
-                                </div>
-                                <div class="it-nw-why-choose-feature-text headline pera-content">
-                                    <h3>{{trans('Process.Stay Calm')}}</h3>
-
-
-
-                                    <h4>{{trans('Process.Feel free and Relax Yourself')}}</h4>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

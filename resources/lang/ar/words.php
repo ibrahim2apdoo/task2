@@ -31,6 +31,7 @@ return [
     'name' => 'الإسم',
     'description' => 'الوصف',
     'sub_description' => 'وصف مختصر',
+    'short_description' => 'وصف مختصر',
     'first_name' => 'اإسم الأول',
     'last_name' => 'الإسم الأخير',
     'created_by' => 'الإنشاء بواسطة',
@@ -149,6 +150,20 @@ return [
     'show_service' => 'عرض الخدمة',
     'edit_service' => 'تعديل الخدمة',
     'create_service' => 'إنشاء خدمة',
+
+
+    'features' => 'الميزات',
+    'show_features' => 'عرض الميزات',
+    'show_feature' => 'عرض الميزة',
+    'edit_feature' => 'تعديل الميزة',
+    'create_feature' => 'إنشاء ميزة',
+
+    'processes' => 'العمليات',
+    'show_processes' => 'عرض العمليات',
+    'show_process' => 'عرض عملية',
+    'edit_process' => 'تعديل العملية',
+    'create_process' => 'إنشاء عملية',
+
 
     'partners' => 'الشركاء',
     'show_partners' => 'عرض الشركاء',

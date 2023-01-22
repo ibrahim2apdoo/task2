@@ -38,7 +38,7 @@
                                 <h3 class="widget-title">{{trans('main.Projects')}}</h3>
                                 <ul>
                                     @foreach(Projects() as $title)
-                                    <li><a href="{{route('project.show',$title->id)}}">{{$title->title}}</a></li>
+                                    <li><a href="{{route('project.show',$title->id)}}">{!! $title->title !!}</a></li>
                                     @endforeach
                                 </ul>
                             </div>

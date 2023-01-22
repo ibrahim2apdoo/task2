@@ -37,11 +37,11 @@
                                 @endif
                             </div>
                             <div class="blog-details-text dia-headline aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
-                                <h2>{{$service->title}}</h2>
+                                <h2>{!! $service->title !!}</h2>
                                 <article>
                                     <ul>
-                                        <li style="text-align:justify"> {{$service->short_description}}</li>
-                                        <li style="text-align:justify"> {{$service->description}}</li>
+                                        <li style="text-align:justify"> {!! $service->short_description !!}</li>
+                                        <li style="text-align:justify"> {!! $service->description !!}</li>
                                     </ul>
                                 </article>
                             </div>

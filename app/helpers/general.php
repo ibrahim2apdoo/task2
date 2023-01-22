@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Fact;
 use App\Models\Permission;
 
 const PAGINATION_COUNT = 15;
@@ -69,13 +70,26 @@ function email(){
     return '';
 }
 
+function social(){
+    $social=\App\Models\Contact::where('type','social')->get();
+
+    if ($social)
+        return $social;
+    return '';
+}
+
 function Projects(){
     $Projects=\App\Models\Project::take(6)->get();
     if ($Projects)
         return $Projects;
     return '';
 }
-
+function about(){
+    $about=\App\Models\Page::get();
+    if ($about)
+        return $about;
+    return '';
+}
 
 function Vision(){
     $vision=\App\Models\Page::where('identifier','Vision')->get();
@@ -90,24 +104,33 @@ function Mission(){
         return $mission;
     return '';
 }
-function Quality(){
-    $quality=\App\Models\Page::where('identifier','Quality')->get();
-    if ($quality)
-        return $quality;
-    return '';
-}
-function Partners(){
-    $partners=\App\Models\Page::where('identifier','Partners')->get();
-    if ($partners)
-        return $partners;
-    return '';
-}
 function Company(){
     $company=\App\Models\Page::where('identifier','About our Company')->get();
     if ($company)
         return $company;
     return '';
 }
+
+function Latest_Project(){
+    $Latest_Project=\App\Models\Page::where('identifier','Latest Project')->get();
+    if ($Latest_Project)
+        return $Latest_Project;
+    return '';
+}
+
+function Solution_We_Offer(){
+    $Solution_We_Offer=\App\Models\Page::where('identifier','Solution We Offer')->get();
+    if ($Solution_We_Offer)
+        return $Solution_We_Offer;
+    return '';
+}
+function OurProcess(){
+    $process=\App\Models\Page::where('identifier','Process')->get();
+    if ($process)
+        return $process;
+    return '';
+}
+
 function banner(){
     $banner=\App\Models\Slider::take(1)->get();
     if ($banner)
@@ -120,3 +143,10 @@ function Project(){
         return $project;
     return '';
 }
+function facts(){
+    $facts=Fact::take(4)->get();
+    if ($facts)
+        return $facts;
+    return '';
+}
+

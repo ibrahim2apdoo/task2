@@ -346,7 +346,140 @@
                 @endpermission
                 {{-- service routes end --}}
 
-                {{-- project routes start --}}
+
+
+                {{-- feature routes start --}}
+                @permission('read-features')
+                <li class="menu-item menu-item-submenu {{ request()->routeIs('features.*') ? 'menu-item-open menu-item-here' : '' }}"
+                    aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle">
+                        <i class="fab fa-servicestack svg-icon menu-icon"></i>
+                        <span class="menu-text">{{__('words.features')}}</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="menu-submenu">
+                        <i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+
+                            @permission('read-features')
+                            <li class="menu-item  {{ request()->routeIs('features.index') ? 'menu-item-active' : '' }}"
+                                aria-haspopup="true">
+                                <a href="{{route('features.index')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{__('words.show_all')}}</span>
+                                </a>
+                            </li>
+                            @endpermission
+
+                            @permission('create-features')
+                            <li class="menu-item  {{ request()->routeIs('features.create') ? 'menu-item-active' : '' }}"
+                                aria-haspopup="true">
+                                <a href="{{route('features.create')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{__('words.create')}}</span>
+                                </a>
+                            </li>
+                            @endpermission
+                        </ul>
+                    </div>
+                </li>
+                @endpermission
+                {{-- feature routes end --}}
+
+
+
+ {{-- process routes start --}}
+                @permission('read-processes')
+                <li class="menu-item menu-item-submenu {{ request()->routeIs('processes.*') ? 'menu-item-open menu-item-here' : '' }}"
+                    aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle">
+                        <i class="fab fa-servicestack svg-icon menu-icon"></i>
+                        <span class="menu-text">{{__('words.processes')}}</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="menu-submenu">
+                        <i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+
+                            @permission('read-processes')
+                            <li class="menu-item  {{ request()->routeIs('processes.index') ? 'menu-item-active' : '' }}"
+                                aria-haspopup="true">
+                                <a href="{{route('processes.index')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{__('words.show_all')}}</span>
+                                </a>
+                            </li>
+                            @endpermission
+
+                            @permission('create-processes')
+                            <li class="menu-item  {{ request()->routeIs('processes.create') ? 'menu-item-active' : '' }}"
+                                aria-haspopup="true">
+                                <a href="{{route('processes.create')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{__('words.create')}}</span>
+                                </a>
+                            </li>
+                            @endpermission
+                        </ul>
+                    </div>
+                </li>
+                @endpermission
+                {{-- feature routes end --}}
+
+ {{-- facts routes start --}}
+                @permission('read-facts')
+                <li class="menu-item menu-item-submenu {{ request()->routeIs('facts.*') ? 'menu-item-open menu-item-here' : '' }}"
+                    aria-haspopup="true" data-menu-toggle="hover">
+                    <a href="javascript:;" class="menu-link menu-toggle">
+                        <i class="fab fa-servicestack svg-icon menu-icon"></i>
+                        <span class="menu-text">{{__('words.facts')}}</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <div class="menu-submenu">
+                        <i class="menu-arrow"></i>
+                        <ul class="menu-subnav">
+
+                            @permission('read-facts')
+                            <li class="menu-item  {{ request()->routeIs('facts.index') ? 'menu-item-active' : '' }}"
+                                aria-haspopup="true">
+                                <a href="{{route('facts.index')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{__('words.show_all')}}</span>
+                                </a>
+                            </li>
+                            @endpermission
+
+                            @permission('create-facts')
+                            <li class="menu-item  {{ request()->routeIs('facts.create') ? 'menu-item-active' : '' }}"
+                                aria-haspopup="true">
+                                <a href="{{route('facts.create')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{__('words.create')}}</span>
+                                </a>
+                            </li>
+                            @endpermission
+                        </ul>
+                    </div>
+                </li>
+                @endpermission
+                {{-- feature routes end --}}
+
+
+
+
+                {{-- project routes start   --}}
                 @permission('read-projects')
                 <li class="menu-item menu-item-submenu {{ request()->routeIs('projects.*') ? 'menu-item-open menu-item-here' : '' }}"
                     aria-haspopup="true" data-menu-toggle="hover">

@@ -152,6 +152,18 @@ return [
     'edit_service' => 'Edit Service',
     'create_service' => 'Create Service',
 
+    'features' => 'Features',
+    'show_features' => 'Show Features',
+    'show_feature' => 'Show Feature',
+    'edit_feature' => 'Edit Feature',
+    'create_feature' => 'Create Feature',
+
+    'processes' => 'Processes',
+    'show_processes' => 'Show Processes',
+    'show_process' => 'Show Process',
+    'edit_process' => 'Edit Process',
+    'create_process' => 'Create Process',
+
     'clients' => 'Clients',
     'show_clients' => 'Show Clients',
     'show_client' => 'Show Client',

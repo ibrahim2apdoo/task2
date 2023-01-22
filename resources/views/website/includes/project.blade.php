@@ -3,10 +3,12 @@
 	============================================= -->
 <section id="it-nw-project" class="it-nw-project-section">
     <div class="it-nw-section-title headline pera-content text-center middle-align wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-        <span class="it-nw-title-tag">{{trans('main.Latest Project')}} </span>
-        <h2>{{trans('main.Our Wonderful Gallery')}}</h2>
-        <p>{{trans('main.Our mission is to continuously')}}
+        @foreach(Latest_Project() as $Latest_Project)
+        <span class="it-nw-title-tag">{!! $Latest_Project->title !!} </span>
+        <h2>{!! $Latest_Project->sub_title !!} </h2>
+        <p>{!! $Latest_Project->description !!}
         </p>
+        @endforeach
     </div>
     <div class="it-nw-project-content">
         <div class="it-nw-project-slider-area" dir="ltr"  >

@@ -5,9 +5,9 @@
         <div class="wow fadeFromLeft it-nw-section-title headline pera-content text-center middle-align wow fadeInUp"
              data-wow-delay="300ms" data-wow-duration="1500ms"
              style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeFromLeft;">
-            <span class="it-nw-title-tag">{{$project->title}}</span>
+            <span class="it-nw-title-tag">{!! $project->title !!}</span>
             <ul>
-                <li>{{$project->description}}</li>
+                <li>{!! $project->description !!}</li>
             </ul>
 
 

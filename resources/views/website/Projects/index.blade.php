@@ -19,7 +19,7 @@
                     @endif
                     <div class="projectCard-content">
                         <a href="{{route('project.show',$project->id)}}">
-                            <p class="projectCard-category">{{$project->title}}</p>
+                            <p class="projectCard-category">{!! $project->title !!}</p>
                         </a>
                     </div>
                 </div>

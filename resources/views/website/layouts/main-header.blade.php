@@ -23,10 +23,9 @@
                     </ul>
                 </div>
                 <div class="it-nw-header-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    @foreach(social() as $social)
+                    <a href="{{$social->contact}}"><i class="{{$social->icon}}"></i></a>
+                    @endforeach
                 </div>
             </div>
 
@@ -74,15 +73,17 @@
                     </div>
                     <nav class="main-navigation it_nw_it_nw_mobile_menu-dropdown  clearfix ul-li">
                         <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
-                            <li ><a href="#">Demos</a></li>
-                            <li><a href="{{route('about')}}"  >About</a></li>
-                            <li><a href="{{route('service')}}"  >Service</a></li>
-                            <li><a href="{{route('contact')}}"  >Contact</a></li>
+                            <li ><a href="{{route('home')}}">{{trans('main.Home')}}</a></li>
+                            <li><a href="{{route('about')}}"  >{{trans('main.About')}}</a></li>
+                            <li><a href="{{route('service')}}"  >{{trans('main.Service')}}</a></li>
+                            <li><a href="{{route('partners')}}"  >{{trans('main.Partners')}}</a></li>
+                            <li><a href="{{route('clients')}}"  >{{trans('main.clients')}}</a></li>
+                            <li><a href="{{route('projects')}}">{{trans('main.Projects')}}</a></li>
+                            <li><a href="{{route('contact')}}">{{trans('main.Contact us')}}</a></li>
                             <li class="dropdown">
-                                <a href="#">Blog</a>
+                                <a href="#">{{trans('main.Blog')}}+</a>
                                 <ul class="dropdown-menu clearfix">
-                                    <li><a href="{{route('blog')}}">Blog Page</a></li>
-                                    <li><a  href="blog-single.html">Blog Details</a></li>
+                                    <li><a href="{{route('user.blog.index')}}">{{trans('main.Blog Page')}}</a></li>
                                 </ul>
                             </li>
                         </ul>
