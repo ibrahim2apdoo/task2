@@ -24,7 +24,7 @@
                 </div>
                 <div class="it-nw-project-inner-text position-absolute headline">
                     <span>{{$project->title}}</span>
-                    <h3><a href="#">{{Str::limit($project->description, 50)}}  </a></h3>
+                    <h3><a href="{{route('project.show',$project->id)}}">{!! Str::limit($project->description, 50) !!}  </a></h3>
                 </div>
                 <div class="it-nw-project-link">
                     <a class="d-flex align-items-center justify-content-center" href="{{route('project.show',$project->id)}}"><i class="fa fa-link"></i></a>

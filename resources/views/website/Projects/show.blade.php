@@ -7,7 +7,7 @@
              style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeFromLeft;">
             <span class="it-nw-title-tag">{!! $project->title !!}</span>
             <ul>
-                <li>{!! $project->description !!}</li>
+                <li style="list-style: none;">{!! $project->description !!}</li>
             </ul>
 
 

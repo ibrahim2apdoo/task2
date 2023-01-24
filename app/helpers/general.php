@@ -165,3 +165,11 @@ function facts(){
     return '';
 }
 
+
+function mapLink(){
+    $map=\App\Models\Page::where('identifier','map')->first();
+    if ($map)
+        return $map->link;
+    return '';
+}
+

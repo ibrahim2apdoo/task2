@@ -15,6 +15,7 @@ return [
         'testimonials' => ['read', 'create', 'update', 'delete'],
         'partners' => ['read', 'create', 'update', 'delete'],
         'clients' => ['read', 'create', 'update', 'delete'],
+        'userContact' => ['read', 'delete'],
         'portfolios' => ['read', 'create', 'update', 'delete'],
         'blog' => ['read', 'create', 'update', 'delete'],
         'faqs' => ['read', 'create', 'update', 'delete'],

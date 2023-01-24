@@ -21,6 +21,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::get('service/show/{id}',  [serviceController::class,'show'])->name('service.show');
     Route::get('project/show/{id}',  [ProjectController::class,'show'])->name('project.show');
     Route::get('contact',  [ContactController::class,'index'])->name('contact');
+    Route::get('contact/index',  [ContactController::class,'contact'])->name('contact.index');
+    Route::post('contact/store',  [ContactController::class,'store'])->name('user.contact.store');
     Route::get('blog',  [BlogController::class,'blog'])->name('blog');
     Route::get('blog/show/{id}',  [BlogController::class,'show'])->name('user.blog.show');
     Route::get('blog/index',  [BlogController::class,'index'])->name('user.blog.index');

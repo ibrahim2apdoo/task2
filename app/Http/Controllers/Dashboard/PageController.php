@@ -45,6 +45,7 @@ class PageController extends Controller
 
             return redirect()->route('pages.index')->with(['success' => __('message.created_successfully')]);
         } catch (\Exception $e) {
+
             return redirect()->back()->with(['error' => __('message.something_wrong')]);
         }
     }

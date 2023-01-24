@@ -4,8 +4,13 @@
             <div class="it-nw-header-cta-social d-flex">
                 <div class="it-nw-header-cta ul-li">
                     <ul>
-                        <li><img src="{{asset('website/assets/img/its-2/icon/ic1.png')}}" alt=""> {{email()}}</li>
-                        <li><img src="{{asset('website/assets/img/its-2/icon/ic2.png')}}" alt=""> {{phone()}}</li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&source=mailto&to={{email()}}" target="_blank">
+                            <img src="{{asset('website/assets/img/its-2/icon/ic1.png')}}" alt=""> {{email()}}
+                            </a></li>
+                        <li><a href="https://wa.me/{{phone()}}" target="_blank">
+                                <img src="{{asset('website/assets/img/its-2/icon/ic2.png')}}" alt="">{{phone()}}
+                            </a></li>
+
                         <li>
                             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                 <a class="{{LaravelLocalization::getCurrentLocaleNative() == $properties['native'] ? 'd-none' : '' }}"
@@ -24,7 +29,7 @@
                 </div>
                 <div class="it-nw-header-social">
                     @foreach(social() as $social)
-                    <a href="{{$social->contact}}"><i class="{{$social->icon}}"></i></a>
+                    <a href="{{$social->contact}}" target="_blank"><i class="{{$social->icon}}"></i></a>
                     @endforeach
                 </div>
             </div>
@@ -54,7 +59,7 @@
                     </ul>
                 </nav>
                 <div class="it-nw-btn  text-center">
-                    <a class="d-flex justify-content-center align-items-center" href="#"> {{trans('main.Get A Quote')}}<i class="fas fa-arrow-right"></i></a>
+                    <a class="d-flex justify-content-center align-items-center" href="{{route('contact.index')}}"> {{trans('main.Get A Quote')}}<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>

@@ -33,10 +33,14 @@
                         <div class="it-nw-about-tab-btn">
                             <ul id="tabs" class="nav text-capitalize nav-tabs">
                                 @foreach(Mission() as $mission)
-                                <li class="nav-item"><a href="#" data-target="#mission" data-toggle="tab" class="nav-link text-capitalize">{!! $mission->title !!} </a></li>
+                                    <li class="nav-item">
+                                        <a href="#" data-target="#mission" data-toggle="tab" class="nav-link text-capitalize">{!! $mission->title !!} </a>
+                                    </li>
                                 @endforeach
                                     @foreach(Vision() as $vision)
-                                <li class="nav-item"><a href="#" data-target="#vision" data-toggle="tab" class="nav-link text-capitalize">{!! $vision->title !!} </a></li>
+                                    <li class="nav-item">
+                                        <a href="#" data-target="#vision" data-toggle="tab" class="nav-link text-capitalize">{!! $vision->title !!} </a>
+                                    </li>
                                     @endforeach
                             </ul>
                         </div>
@@ -46,14 +50,14 @@
                                 <div id="mission" class="tab-pane fade">
                                     <div class="it-nw-about-tab-content">
                                         @foreach(Mission() as $mission)
-                                        <p>{!! $mission->description !!}  </p>
+                                            {!! $mission->description !!}
                                         @endforeach
                                     </div>
                                 </div>
                                 <div id="vision" class="tab-pane fade">
                                     <div class="it-nw-about-tab-content">
                                         @foreach(Vision() as $vision)
-                                        <p>{!! $vision->description !!}</p>
+                                           {!! $vision->description !!}
                                         @endforeach
                                     </div>
                                 </div>

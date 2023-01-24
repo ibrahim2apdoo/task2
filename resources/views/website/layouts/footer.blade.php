@@ -5,6 +5,14 @@
 
 <!-- Start of Footer section
 	============================================= -->
+
+
+
+<a id="whats" class="whats" href="https://wa.me/{{phone()}}" target="_blank">
+    <div style="width: 40px;">
+        <img style="width:100%;" src="https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful/2048/5302_-_Whatsapp-512.png">
+    </div>
+</a>
 <footer id="it-nw-fooer" class="it-nw-footer-section  position-relative" data-background="{{asset('website/assets/img/its-2/logo/image.jpg')}}">
     <div class="it-nw-fooer-widget-wrapper">
         <div class="container">

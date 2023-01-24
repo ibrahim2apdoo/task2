@@ -28,7 +28,7 @@
 {{--                            <a href="#"><i class="far fa-user"></i> Philip Hobs</a>--}}
                             <a href="#" style="color: #00133e !important"><i class="fas fa-calendar-alt" ></i>{{createdAtFormat($blog->created_at)}}</a>
                         </div>
-                        <h3><a href="#" style="color: #00133e !important">{{$blog->title}}</a></h3>
+                        <h3><a href="{{route('user.blog.show',$blog->id)}}" style="color: #00133e !important">{{$blog->title}}</a></h3>
                         <a class="blog-more" href="{{route('user.blog.show',$blog->id)}}" style="color: #00133e !important">{{trans('main.Read more')}}<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>

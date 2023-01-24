@@ -8,7 +8,7 @@
             @foreach(partners() as $partner)
             <div class="wow fadeFromLeft it-nw-section-title headline pera-content text-center middle-align wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeFromLeft;">
                 <span class="it-nw-title-tag"> {{$partner->title}}</span>
-                <p>{!! $partner->description !!}</p>
+                {!! $partner->description !!}
 
             </div>
             @endforeach

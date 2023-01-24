@@ -25,8 +25,8 @@
 
                                 <h2 ><strong>{{$blog->title}}</strong></h2>
 
-                                <p ><br>
-                                    {{$blog->description}}</p>
+
+                                    {!! $blog->description !!}
 
                             </div>
 

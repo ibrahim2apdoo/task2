@@ -64,6 +64,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
             //clients routes
             Route::resource('clients', 'ClientController');
 
+            //clients routes
+            Route::resource('userContact', 'UserContactController');
+
             //portfolios routes
             Route::resource('portfolios', 'PortfolioController');
 
